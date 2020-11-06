@@ -40,13 +40,14 @@ return
     colorNum = 5
     while colorNum != True {
         ;MsgBox, colorNum
+        Random, rand, 20, 40
         if(color1 == color%colorNum%) {
             MouseClick, Left, 570, 270, , 75, D
-            Sleep, 40
+            Sleep, rand
             MouseMove, 1350, LocArr[colorNum], 75
-            Sleep, 40
+            Sleep, rand
             MouseClick, Left, 1350, LocArr[colorNum], , 75, U
-            Sleep, 40
+            Sleep, rand
             colorNum = True
         } else {
             colorNum++
@@ -54,13 +55,14 @@ return
     }
     colorNum = 5
     while colorNum != True {
+        Random, rand, 20, 40
         if(color2 == color%colorNum%) {
             MouseClick, Left, 570, 460, , 75, D
-            Sleep, 40
+            Sleep, rand
             MouseMove, 1350, LocArr[colorNum], 75
-            Sleep, 40
+            Sleep, rand
             MouseClick, Left, 1350, LocArr[colorNum], , 75, U
-            Sleep, 40
+            Sleep, rand
             colorNum = True
         } else {
             colorNum++
@@ -68,13 +70,14 @@ return
     }
     colorNum = 5
     while colorNum != True {
+        Random, rand, 20, 40
         if(color3 == color%colorNum%) {
             MouseClick, Left, 570, 650, , 75, D
-            Sleep, 40
+            Sleep, rand
             MouseMove, 1350, LocArr[colorNum], 75
-            Sleep, 40
+            Sleep, rand
             MouseClick, Left, 1350, LocArr[colorNum], , 75, U
-            Sleep, 40
+            Sleep, rand
             colorNum = True
         } else {
             colorNum++
@@ -82,13 +85,14 @@ return
     }
     colorNum = 5
     while colorNum != True {
+        Random, rand, 20, 40
         if(color4 == color%colorNum%) {
             MouseClick, Left, 570, 830, , 75, D
-            Sleep, 40
+            Sleep, rand
             MouseMove, 1350, LocArr[colorNum], 75
-            Sleep, 40
+            Sleep, rand
             MouseClick, Left, 1350, LocArr[colorNum], , 75, U
-            Sleep, 40
+            Sleep, rand
             colorNum = True
         } else {
             colorNum++
@@ -125,7 +129,7 @@ return
     MouseClick, Left, 970, 660, , 75, U
 return
 
-;Shields Control+Alt+V
+;Shields Control+Alt+B
 ^!b::
     Send, {Space}
     Sleep, 300
@@ -140,10 +144,11 @@ return
         ColorCode := SubStr(Format(shield%A_Index%), 3, 1)
         Test := ShieldXArr[A_Index]
         If (ColorCode == 7 or ColorCode == 6) {
+            Random, rand, 20, 40
             MouseClick, Left, ShieldXArr[A_Index], ShieldYArr[A_Index], , 75, D
-            Sleep, 25
+            Sleep, rand
             MouseClick, Left, ShieldXArr[A_Index], ShieldYArr[A_Index], , 75, U
-            Sleep, 25
+            Sleep, rand
         }
     }
 return

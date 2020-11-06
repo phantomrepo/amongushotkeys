@@ -9,13 +9,12 @@ A very simple script by someone who vaguely knows what they're doing
  - Download / Upload
  - Shields
  - Trash
+ - Inspect Sample
 
 ### Tasks Planned TODO
  - Divert Power
  - Fuel Engines
  - Spinning Electrical
- - Medbay Scan
- - Inspect Sample
 
  ### Tasks Harder TODO
  - Weapons
